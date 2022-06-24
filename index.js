@@ -89,12 +89,13 @@ function rendertodosection(){
         rendertodosection()
         })
 
-        let deletebuttonEl = document.createElement('button')
-    deletebuttonEl.textContent = 'Delete last'
-    deletebuttonEl.addEventListener('click', function () {
-      state.todos.pop()
-      render()
-    })
+        let deletebuttonEl= document.createElement('button')
+        deletebuttonEl.className='todo_delete'
+        deletebuttonEl.innerText= 'Delete'
+        deletebuttonEl.addEventListener('click', function () {
+            state.todos.pop()
+            rendertodosection()
+          })
         
 
 
@@ -124,3 +125,6 @@ function render(){
     rendertodosection()
 }
 render()
+
+//Mistake nr a million in javascript
+//Due to  family emergency I didn't have time to focus on the exercise 100%
