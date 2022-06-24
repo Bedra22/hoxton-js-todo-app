@@ -1,0 +1,32 @@
+*{
+    
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+      display: grid;
+      height: 100vh;
+      font-family: sans-serif;
+      place-items: center;
+  }
+  .app {
+     border: solid 1px rgb(141, 141, 141);
+     border-radius: 5px;
+     width: 500px;
+     padding:20px;
+  }
+  .section_title{
+    font-size: 25px;
+    border-bottom: solid 1px black;
+    padding-bottom: solid 2px black;
+    padding-bottom: 10px;
+  }
+  .todo{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+  }
+  
+  
